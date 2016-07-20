@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  produto_id: 
+  validade: 2016-07-20 22:05:43
+
+two:
+  user_id: 
+  produto_id: 
+  validade: 2016-07-20 22:05:43
