@@ -1,0 +1,29 @@
+<%= form_for(@validade) do |f| %>
+  <% if @validade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@validade.errors.count, "error") %> prohibited this validade from being saved:</h2>
+
+      <ul>
+      <% @validade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :produto_id %><br>
+    <%= f.text_field :produto_id %>
+  </div>
+  <div class="field">
+    <%= f.label :validade %><br>
+    <%= f.datetime_select :validade %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

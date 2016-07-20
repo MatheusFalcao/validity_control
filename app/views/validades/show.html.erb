@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @validade.user %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @validade.produto %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @validade.validade %>
+</p>
+
+<%= link_to 'Edit', edit_validade_path(@validade) %> |
+<%= link_to 'Back', validades_path %>

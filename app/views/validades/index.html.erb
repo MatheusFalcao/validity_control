@@ -1,0 +1,29 @@
+<h1>Listing validades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Produto</th>
+      <th>Validade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @validades.each do |validade| %>
+      <tr>
+        <td><%= validade.user %></td>
+        <td><%= validade.produto %></td>
+        <td><%= validade.validade %></td>
+        <td><%= link_to 'Show', validade %></td>
+        <td><%= link_to 'Edit', edit_validade_path(validade) %></td>
+        <td><%= link_to 'Destroy', validade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Validade', new_validade_path %>
