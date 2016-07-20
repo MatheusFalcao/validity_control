@@ -29,6 +29,7 @@ class ValidadesController < ApplicationController
   # POST /validades.json
   def create
     @validade = Validade.new(validade_params)
+    @validade.user = current_user
 
     respond_to do |format|
       if @validade.save
